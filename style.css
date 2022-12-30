@@ -136,10 +136,15 @@ form div {
   width: 100%;
 }
 
-.img-about {
-  margin-bottom: 20px;
+#about div p {
+  align-self: center;
 
 }
+
+/* .img-about {
+  margin-bottom: 20px;
+
+} */
 
 /* -------  Ideas  -------- */
 #ideas {
@@ -149,6 +154,7 @@ form div {
 
 .ideas-img {
   width: 100%;
+
 }
 
 /* -------  Host  -------- */
@@ -217,6 +223,7 @@ footer p {
     flex-direction: row;
   }
 
+  /* -------  Form ------- */
   form {
     display: flex;
     gap: 15px;
@@ -241,19 +248,25 @@ footer p {
     width: auto;
   }
 
-  #about div {
+  /* ------- About ------- */
+
+  .content {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 15px;
-    justify-content: space-between;
   }
 
-  #about div img {
-    width: 100%;
+  #about div div {
+    display: flex;
+    width: 25%;
   }
 
-  #about div img {
-    object-fit: cover;
+  .paragraph {
+    flex: 2;
   }
+
+  /* ------- Ideas ------- */
 
   #ideas {
     display: flex;
@@ -261,26 +274,24 @@ footer p {
     gap: 15px;
   }
 
-  .row div {
-    flex: 2;
-  }
-
-  .row div img {
-    height: 400px;
+  #ideas div {
+    width: 100%;
     object-fit: cover;
   }
 
+  /* ------- Host ------- */
   #host {
     display: flex;
     flex-direction: row;
     gap: 15px;
   }
 
-
+  #host div {
+    align-self: center;
+  }
 
   #host img {
     width: 50%;
     object-fit: cover;
-
   }
 }
